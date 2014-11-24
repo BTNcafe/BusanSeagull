@@ -38,6 +38,9 @@ if (file_exists('high_score.dat') == true) {
 audio_play_sound(sound_bgm, 1, 1);
 
 display_set_gui_size(1280, 720);
+device_mouse_dbclick_enable(0)
+
+
 </string>
           </argument>
         </arguments>
@@ -135,6 +138,34 @@ if ds_map_find_value(async_load, 'id') == global.add_rank_http_id {
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if room != start_game {
+virtual_key_add(0,520,200,200,vk_left)
+virtual_key_add(200,520,200,200,vk_right)
+
+virtual_key_add(1080,520,200,200,vk_space)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -163,6 +194,11 @@ if room == start_game {
     draw_text(room_width / 2, room_height / 2, '현재점수: ' + string(global.p) + ' / 최고점수: ' + string(global.high_score));
         
 } else {
+    draw_set_colour(c_white)
+    draw_rectangle(0,520,200,720,1)
+    draw_rectangle(200,520,400,720,1)
+    draw_rectangle(1080,520,1280,720,1)
+    draw_set_colour(c_black)
     draw_set_valign(fa_top);
 
     draw_set_halign(fa_left);

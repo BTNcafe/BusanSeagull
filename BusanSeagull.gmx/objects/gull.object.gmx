@@ -108,6 +108,7 @@ if keyboard_check(vk_right){
     is_hmoving = 1;
 }
 
+if 1=0{
 for (var i = 0; i &lt; 2; i += 1) {
     if device_mouse_check_button_pressed(i, mb_left) {
         touch_index = i;
@@ -121,6 +122,7 @@ if device_mouse_check_button(touch_index, mb_left) {
     } else {
         is_hmoving = 1;
     }
+}
 }
 
 if is_hmoving == -1 {
@@ -181,14 +183,14 @@ if bbox_right &gt; room_width {
             <string>/// vmoving
 
 var is_vmoving = 0;
-
+if 1=0{
 if device_mouse_check_button(touch_index, mb_left) {
     if touch_y &lt; device_mouse_y(touch_index) - 10 {
         is_vmoving = 1;
     }
     touch_y = device_mouse_y(touch_index);  
 }
-
+}
 if (is_vmoving or keyboard_check_pressed(vk_space)) and vspeed &lt;= 0 {
     if y == ystart {
         vspeed = 20;
@@ -236,7 +238,7 @@ if (global.time &gt; 0) {
         ds_map_destroy(map);
         global.high_score = global.p;
         
-        global.rank_name_async_id = get_string_async('랭킹에 등록될 아이디를 입력해주세요.', '');
+
     }
     room_goto(start_game);
 }
