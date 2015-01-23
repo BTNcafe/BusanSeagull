@@ -124,7 +124,7 @@
     <option_ios_advertising_type>iAds</option_ios_advertising_type>
     <option_ios_app_id></option_ios_app_id>
     <option_ios_build_version>0</option_ios_build_version>
-    <option_ios_certificate>iPhone Developer: YOUNG JAE SIM (B22ZTS94CY)</option_ios_certificate>
+    <option_ios_certificate>&lt; Press refresh to fetch certificate list from Mac&gt;</option_ios_certificate>
     <option_ios_device_type>3</option_ios_device_type>
     <option_ios_display_name>BusanSeagull</option_ios_display_name>
     <option_ios_flurry_enable>0</option_ios_flurry_enable>
@@ -153,7 +153,7 @@
     <option_ios_orient_landscape_right>-1</option_ios_orient_landscape_right>
     <option_ios_orient_portrait>-1</option_ios_orient_portrait>
     <option_ios_orient_portrait_upside_down>-1</option_ios_orient_portrait_upside_down>
-    <option_ios_provisioning>Kimdeuksin Distribution Profile - com.sproutree.ArtRush-Korea-Kimdeuksin</option_ios_provisioning>
+    <option_ios_provisioning>&lt; Press refresh to fetch provisioning list from Mac&gt;</option_ios_provisioning>
     <option_ios_push_enable>0</option_ios_push_enable>
     <option_ios_scale>-1</option_ios_scale>
     <option_ios_set_device_id></option_ios_set_device_id>
@@ -255,7 +255,7 @@
     <option_shortcircuit>True</option_shortcircuit>
     <option_showcursor>True</option_showcursor>
     <option_showprogress>1</option_showprogress>
-    <option_sizeable>False</option_sizeable>
+    <option_sizeable>True</option_sizeable>
     <option_stayontop>false</option_stayontop>
     <option_sync_vertex>0</option_sync_vertex>
     <option_textureGroup0_border>2</option_textureGroup0_border>
